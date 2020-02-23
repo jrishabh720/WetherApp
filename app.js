@@ -1,11 +1,9 @@
 const request = require('request');
-
-const url = `https://api.darksky.net/forecast/62d12f8cdd6b6f6868227ed367fe1038/37.8267,-122.4233`;
-
-request({url : url},(error,response)=>{
+const key = "caa88eed7a5ab2702ce2ec4ff4794a42";
+const url = `http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=key`;
+request({ url : url},(error,response)=>{
 	console.log(response);
 })
-
 //console.log("Starting");
 
 //setTimeout(()=>{
